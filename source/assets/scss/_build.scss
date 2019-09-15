@@ -1,0 +1,119 @@
+body, html{
+  height: 100%;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  min-height: 600px;
+  overflow-x: hidden;
+}
+*,*::after,*::before{
+  box-sizing: border-box
+}
+
+// ===================================================
+header{
+  height: 100%;
+  .parent-row{
+    height: 100%;
+    margin-bottom: 0;
+    .col.l7{
+      height: 100%;
+      background-image: url(../imgs/loginbg.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+      color: $color-coffee;
+      h2{
+        margin-top: 0px;
+        margin-bottom: 52px;
+        font-weight: bold;
+      }
+      p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 30px;
+      }
+      p.support-text{
+        font-weight: 600;
+        font-size: 28px;
+      }
+      #circle{
+        position: relative;
+        bottom: 8px;
+        margin: 0 10px;
+        font-size: 52px;
+        line-height: 10px;
+      }
+    }
+    .col.l5{
+      height: 100%;
+      .center-align.form-align{
+        margin-right: 20px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      h4{
+        color: $color-primary;
+        font-weight: 300;
+        margin-bottom: 2.4rem;
+      }
+      p{
+        color: $color-tertiary;
+        margin-bottom: 2.4rem;
+      }
+      .input-field.col.s8{
+        margin-left: 0;
+      }
+      input{
+        color: $color-primary;
+        font-weight: 600;
+      }
+      input:focus,
+      input.valid[type=text]:not(.browser-default){
+        border-bottom: 1px solid $color-secondary;
+        box-shadow: 0 1px 0 0 $color-secondary;
+      }
+      label.active {
+        color: $color-secondary;
+      }
+      button{
+        background-color: $color-tertiary;
+        color: $color-coffee;
+        font-weight: 600;
+        text-transform: none;
+        font-size: 18px;
+        border-radius: 5px;
+        width: 160px;
+        height: 40px;
+        margin-top: 1.2rem;
+        margin-bottom: 1rem;
+      }
+      a.link{
+        color: #704C22;
+      }
+      a.link:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.mb-0{
+  margin-bottom: 0;
+}
+
+.flex-h-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-v-center{
+  margin-left: 32px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

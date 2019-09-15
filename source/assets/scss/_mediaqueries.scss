@@ -1,0 +1,34 @@
+
+// Screen = 1281px to higher resolution desktops
+@media (min-width: 1281px) { }
+
+// Screen = B/w 1025px to 1280px Laptops and Desktops
+@media (min-width: 1025px) and (max-width: 1280px) {}
+
+
+// Screen = B/w 768px to 1024px Tablets, Ipads (portrait)
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+
+// B/w 768px to 1024px Tablets, Ipads (landscape)
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+
+
+// B/w 481px to 767px Low Resolution Tablets, Mobiles (Landscape)
+@media (min-width: 481px) and (max-width: 767px) {}
+
+
+// B/w 320px to 479px Most of the Smartphones Mobiles (Portrait)
+@media (min-width: 320px) and (max-width: 480px) {
+  header .parent-row .col.l5{
+    h4{
+      margin-bottom: 10px;
+    }
+  }
+  .center-align{
+    margin-right: 0px;
+  }
+  .row .col{
+    padding: 0;
+  }
+}
